@@ -47,13 +47,15 @@ data class TaxonomiesItem(
 	val city: String? = null,
 
 	@field:SerializedName("locations")
-	val locations: List<LocationsItem?>? = null
+	val locations: List<LocationsItem?>? = null,
+
+	var isSelected: Boolean = false
 )
 
 data class DataItem(
 
 	@field:SerializedName("taxonomies")
-	val taxonomies: List<TaxonomiesItem?>? = null,
+	val taxonomies: List<TaxonomiesItem>,
 
 	@field:SerializedName("name")
 	val name: String? = null,
