@@ -63,5 +63,7 @@ data class DataItem(
 	@field:SerializedName("slug")
 	val slug: String? = null,
 
-	var expandable : Boolean = false
+	var expandable : Boolean = false,
+
+	var count: Int = 0
 )
